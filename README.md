@@ -1,2 +1,3 @@
 # Bowman
-Simple remake of classic game known as Bowman
+Simple remake of classic game known as Bowman. NOTE: ALL FILE LOCATIONS FOR IMAGES MUST BE CHANGED TO GIVEN LOCATION FOR GAME TO WORK
+CHANGES SHOULD BE MADE IN GamePanel.java UNDER THE METHOD paintComponent
