@@ -34,9 +34,7 @@ public class GamePanel extends JPanel{
 		super.repaint();
 		// If it is in the main menu
 		if (MainClass.option == 1){
-			menu = new ImageIcon ("D:\\Downloads\\Bowman2\\Bowman\\bin\\menu.png");
-			//		 menu = new ImageIcon ("H:\\Profile\\Desktop\\Final Project\\Java\\Bowman\\src\\menu.png");
-
+			menu = new ImageIcon (this.getClass().getResource("/Icons/menu.png"));
 			menu.paintIcon(this,g,0,0);
 			g.setColor(Color.BLACK);
 
@@ -51,9 +49,7 @@ public class GamePanel extends JPanel{
 		}
 		// If it is in the game over screen
 		else if (MainClass.option == 2){
-			endScreen = new ImageIcon ("D:\\Downloads\\Bowman2\\Bowman\\bin\\endScreen.png");
-			//			 endScreen = new ImageIcon ("H:\\Profile\\Desktop\\Final Project\\Java\\Bowman\\src\\endScreen.png");
-
+			endScreen = new ImageIcon (this.getClass().getResource("/Icons/endScreen.png"));
 			endScreen.paintIcon(this,g,0,0);
 			g.setColor(Color.BLACK);
 			g.drawRect(61, 470, 442, 190);
@@ -62,39 +58,30 @@ public class GamePanel extends JPanel{
 		}
 		// If it is in the instructions screen
 		else if (MainClass.option == 3){
-			instructions = new ImageIcon ("D:\\Downloads\\Bowman2\\Bowman\\bin\\instructions.png");
-			//			 instructions = new ImageIcon ("H:\\Profile\\Desktop\\Final Project\\Java\\Bowman\\src\\instructions.png");
-
+			instructions = new ImageIcon (this.getClass().getResource("/Icons/instructions.png"));
 			instructions.paintIcon(this, g, 0, 0);
 			g.setColor(Color.BLACK);
 			g.drawRect(54, 570, 318, 89);
 		}
 		// If it is in the "in between" rounds screen
 		else if (MainClass.option == 6){
-			nextRound = new ImageIcon ("D:\\Downloads\\Bowman2\\Bowman\\bin\\nextRound.png");
+			nextRound = new ImageIcon (this.getClass().getResource("/Icons/nextRound.png"));
 			nextRound.paintIcon(this, g, 0, 0);
 		}
 		// If it is in the game over screen after an online game
 		else if (MainClass.option == 7){
-			endScreenOnline = new ImageIcon ("D:\\Downloads\\Bowman2\\Bowman\\bin\\endScreenOnline.png");
+			endScreenOnline = new ImageIcon (this.getClass().getResource("/Icons/endScreenOnline.png"));
 			endScreenOnline.paintIcon(this, g, 0, 0);
 			g.setColor(Color.BLACK);
 			g.drawRect(375, 461, 442, 190);
 		}
 		// If it is in the game
 		else if (MainClass.option == 4 || MainClass.option == 5){
-			arrow = new ImageIcon("D:\\Downloads\\Bowman2\\Bowman\\bin\\arrow.png");
-			person = new ImageIcon("D:\\Downloads\\Bowman2\\Bowman\\bin\\stick.png");
-			enemy = new ImageIcon ("D:\\Downloads\\Bowman2\\Bowman/bin\\enemy.png");
-			arrowEnemy = new ImageIcon ("D:\\Downloads\\Bowman2\\Bowman\\bin\\arrowEnemy.png");
-			background = new ImageIcon ("D:\\Downloads\\Bowman2\\Bowman\\bin\\background.png");
-
-			//			     arrow = new ImageIcon("H:\\Profile\\Desktop\\Final Project\\Java\\Bowman\\src\\arrow.png");
-			//			     person = new ImageIcon("H:\\Profile\\Desktop\\Final Project\\Java\\Bowman\\src\\stick.png");
-			//			     enemy = new ImageIcon ("H:\\Profile\\Desktop\\Final Project\\Java\\Bowman\\src\\enemy.png");
-			//			    arrowEnemy = new ImageIcon ("H:\\Profile\\Desktop\\Final Project\\Java\\Bowman\\src\\arrowEnemy.png");
-			//			    background = new ImageIcon ("H:\\Profile\\Desktop\\Final Project\\Java\\Bowman\\src\\background.png");
-
+			arrow = new ImageIcon(this.getClass().getResource("/Icons/arrow.png"));
+			person = new ImageIcon(this.getClass().getResource("/Icons/stick.png"));
+			enemy = new ImageIcon (this.getClass().getResource("/Icons/enemy.png"));
+			arrowEnemy = new ImageIcon (this.getClass().getResource("/Icons/arrowEnemy.png"));
+			background = new ImageIcon (this.getClass().getResource("/Icons/background.png"));
 			// If the user is supposed to shoot but has not shot their arrow yet
 			if (moving == 0){
 				personX = (int) Player.position.getX();
